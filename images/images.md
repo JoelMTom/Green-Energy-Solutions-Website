@@ -1,0 +1,2 @@
+A folder for images.
+
