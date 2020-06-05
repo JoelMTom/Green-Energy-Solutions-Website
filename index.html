@@ -1,29 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My page!</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/ea46d4fb41.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='/pages/menu.html'>Menu</a></li>
-                    <li class='logo'><a href='/pages/index.html'>Green Energy Solutions</a></li>
-                    <li><a href='/pages/location.html'>Location</a></li>
-                    <li><a href='/pages/contact.html'>Contact</a></li>
+    <title>Green Energy Solutions</title>
+    <style>
+        header{
+            background: url(images/lightbulb.jpg);
+            background-size: cover;
+            background-position: center;
+            min-height: 800px;
+        }
+
+        @media screen and (max-width: 670px){
+            header{
+                min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="index.html" class="brand-logo hide-on-small-only">Green Energy Solutions</a>
+                <a href="index.html" class="brand-logo show-on-small hide-on-med-and-up">G E Solutions</a>
+                <a href="" class="sidenav-trigger" data-target="moblie-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/pages/location.html">Location</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
-            </nav>
-            <h1>Home</h1>
-        </header>
-        <section>
-            <div>a</div>
-            <div>b</div>
-            <div>c</div>
-        </section>
-        <section>lower section</section>
-        <footer>footer</footer>
-    </body>
+                <ul class="sidenav grey lighten-2" id="moblie-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/pages/location.html">Location</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
 </html>
