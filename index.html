@@ -23,6 +23,18 @@
             header{
                 min-height: 400px;
             }
+
+        }
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+            background: transparent;
+        }
+        @media screen and (min-width: 670px){
+            .box{
+                height: 500px;
+            }
         }
     </style>
 </head>
@@ -94,19 +106,35 @@
         </div>
     </div>
 
-    <div class="container">
-        <p>
-            We sell and service car batteries. Have all kinds of famous car batteries brands including amaron, exide etc..
-        </p>
-        <p>
-            We sell and service all kind of batteries including automatives, inverter and two-wheeler batteries.
-            we provide battery charging service for all kinds of batteries including automative and inverter batteries.
-        </p>
-        <p>
-            We sell inverters of all brands including exide, amaron, luminous etc..
-            We also sell trolleys for inverter and batteries and all kind of related products.
-        </p>
-    </div>
+    <section class="container section id="services>
+        <div class="row">
+            <div class="col s12 l4">
+                <h2 class="indigo-text text-darken-4">Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit ea commodi quam eligendi numquam distinctio ullam quod ut repudiandae fuga, ex nulla molestias eius. Aspernatur fuga beatae illum quo?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolores necessitatibus laboriosam ut adipisci unde aperiam culpa, saepe, eveniet suscipit eius facere id tempora corporis explicabo fuga repudiandae ullam! Sit.</p>
+            </div>
+            <div class="col s12 l6 offset-l2">
+                <ul class="tabs">
+                    <li class="tab col s6">
+                        <a href="#charging" class="indigo-text text-darken-4">Charging</a>
+                    </li>
+                    <li class="tab col s6">
+                        <a href="#repairing" class="indigo-text text-darken-4">Repairing</a>
+                    </li>
+                </ul>
+                <div class="col s12 " id="charging">
+                    <p class="flow-text indigo-text text-darken-4">CHARGING</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis non molestiae cumque nulla. Temporibus, laudantium iusto iste aperiam dolorem reprehenderit, quidem cupiditate amet obcaecati in ad commodi? Sint, corporis eligendi?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laudantium amet quo magnam officia laborum consequuntur, dolore eum ea quidem quibusdam debitis iste obcaecati sed iusto corporis placeat velit nisi?</p>
+                </div>
+                <div class="col s12 " id="repairing">
+                    <p class="flow-text indigo-text text-darken-4">REPAIRING</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis veniam fugit minus earum consectetur corporis laborum voluptatem omnis natus, a distinctio accusantium suscipit officiis quia impedit nisi at quas.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, autem enim quidem numquam eum perspiciatis ex eius laborum cumque quos cupiditate voluptatum? Est, rerum. Aliquid illum quam nesciunt adipisci quis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="parallax-container">
         <div class="parallax">
@@ -114,19 +142,16 @@
         </div>
     </div>
 
-    <div class="container">
-        <p>
-            We sell and service car batteries. Have all kinds of famous car batteries brands including amaron, exide etc..
-        </p>
-        <p>
-            We sell and service all kind of batteries including automatives, inverter and two-wheeler batteries.
-            we provide battery charging service for all kinds of batteries including automative and inverter batteries.
-        </p>
-        <p>
-            We sell inverters of all brands including exide, amaron, luminous etc..
-            We also sell trolleys for inverter and batteries and all kind of related products.
-        </p>
-    </div>
+    <section class="container section">
+        <div class="row">
+            <div class="col s12 l6 center-align valign-wrapper box">
+                <h2 class="indigo-text text-darken-2">Location</h2>
+            </div>
+            <div class="col s12 l6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1963.77573815458!2d76.40399257992054!3d10.135751073582817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0809675e459b07%3A0x6cbea0ead5df330c!2sGreen%20energy%20solutions!5e0!3m2!1sen!2sin!4v1591696549589!5m2!1sen!2sin" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -136,6 +161,7 @@
             $('.sidenav').sidenav();
             $('.materialboxed').materialbox();
             $('.parallax').parallax();
+            $('.tabs').tabs();
         });
     </script>
 
